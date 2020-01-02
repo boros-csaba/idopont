@@ -1,3 +1,27 @@
-<div>
-  
+<div class="grid">
+
+  <div class="hours-column">
+
+    <div class="day-head"></div>
+
+    <div class="row"
+        *ngFor="let hour of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]">
+      {{hour+8}}:00
+    </div>
+
+  </div>
+
+  <div class="column" 
+       *ngFor="let day of ['1 - Hétfő','2 - Kedd','3 - Szerda', '4 - Csütörtök','5 - Péntek','6 - Szombat','7 - Vasárnap']">
+
+
+    <div class="day-head">{{day}}</div>
+
+    <div class="row"
+         *ngFor="let hour of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]">
+      {{hour}}
+    </div>
+
+  </div>
+
 </div>
