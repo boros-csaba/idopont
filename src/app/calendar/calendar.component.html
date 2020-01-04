@@ -1,27 +1,62 @@
-<div class="grid">
+<div class="text-center">
 
-  <div class="hours-column">
+  <h1>2020 Január</h1>
 
-    <div class="day-head"></div>
-
-    <div class="row"
-        *ngFor="let hour of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]">
-      {{hour+8}}:00
-    </div>
-
-  </div>
-
-  <div class="column" 
-       *ngFor="let day of ['1 - Hétfő','2 - Kedd','3 - Szerda', '4 - Csütörtök','5 - Péntek','6 - Szombat','7 - Vasárnap']">
-
-
-    <div class="day-head">{{day}}</div>
-
-    <div class="row"
-         *ngFor="let hour of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]">
-      {{hour}}
-    </div>
-
-  </div>
+  <table class="table">
+    <tr>
+      <th>H</th>
+      <th>K</th>
+      <th>Sz</th>
+      <th>Cs</th>
+      <th>P</th>
+      <th>Sz</th>
+      <th>V</th>
+    </tr>
+    <tr>
+      <td class="past-day">30</td>
+      <td class="past-day">31</td>
+      <td>1</td>
+      <td>2</td>
+      <td class="selected-day">3</td>
+      <td class="free-day">4</td>
+      <td class="free-day">5</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+      <td>10</td>
+      <td class="free-day">11</td>
+      <td class="free-day">12</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>14</td>
+      <td>15</td>
+      <td>16</td>
+      <td>17</td>
+      <td class="free-day">18</td>
+      <td class="free-day">19</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>21</td>
+      <td>22</td>
+      <td>23</td>
+      <td>24</td>
+      <td class="free-day">25</td>
+      <td class="free-day">26</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>28</td>
+      <td>29</td>
+      <td>30</td>
+      <td>31</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
 
 </div>

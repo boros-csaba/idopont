@@ -1,3 +1,30 @@
+table {
+  text-align: center;
+}
+
+td {
+  cursor: pointer;
+}
+
+
+.past-day {
+  color: #999999;
+}
+
+.free-day {
+  color: red;
+}
+
+.selected-day {
+  color: white;
+  background: #17a2b8;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+
+
+
 .grid {
   display: flex;
   border-color: 999999;
