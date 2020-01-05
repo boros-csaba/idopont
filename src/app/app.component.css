@@ -1,3 +1,6 @@
-p {
-  font-family: Lato;
+.main-container {
+  display: table;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
 }

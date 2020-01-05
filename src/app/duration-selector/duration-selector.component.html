@@ -1,0 +1,14 @@
+<div class="btn-group buttons-container">
+  <div class="btn button" [ngClass]="{'btn-info': selectedDuration == 1, 'btn-light': selectedDuration != 1}" (click)="onDurationSelected(1)">
+    <h4>30 perc</h4>
+    5 000 ft
+  </div>
+  <div class="btn button" [ngClass]="{'btn-info': selectedDuration == 2, 'btn-light': selectedDuration != 2}" (click)="onDurationSelected(2)">
+    <h4>45 perc</h4>
+    6 000 ft
+  </div>
+  <div class="btn button" [ngClass]="{'btn-info': selectedDuration == 3, 'btn-light': selectedDuration != 3}" (click)="onDurationSelected(3)">
+    <h4>60 perc</h4>
+    7 000 ft
+  </div>
+</div>
