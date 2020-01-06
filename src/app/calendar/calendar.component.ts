@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-calendar',
@@ -13,16 +13,21 @@ export class CalendarComponent implements OnInit {
   currentDay = 7;
   selectedDay = 23;
 
+  @Output()
+  selectedDateUpdated = new EventEmitter<String>();
+
   constructor() {
     this.daysInMonth = [[null, null, 1, 2, 3, 4, 5],[6, 7, 8, 9, 10, 11, 12], [13, 14, 15, 16, 17, 18, 19], [20, 21, 22, 23, 24, 25, 26], [27, 28, 29, 30, 31, null, null]];
   }
 
   ngOnInit() {
-    
+    this.onDaySelected(this.selectedDay);
   }
+  
 
   onDaySelected(day: number) {
     this.selectedDay = day;
+    this.selectedDateUpdated.next(this.selectedDay);
   }
 
 }

@@ -1,4 +1,5 @@
 <div class="main-container">
-  <app-calendar></app-calendar>
-  <app-duration-selector></app-duration-selector>
+  <app-calendar (selectedDateUpdated)="updateSelectedDate($event)"></app-calendar>
+  <app-duration-selector (selectedDurationUpdated)="updateSelectedDuration($event)"></app-duration-selector>
+  <app-timeslot-list [selectedDate]="selectedDate" [selectedDuration]="selectedDuration"></app-timeslot-list>
 </div>
